@@ -17,144 +17,133 @@
         app:layout_constraintTop_toTopOf="parent"
         android:padding="10dp"
         android:layout_marginTop="10dp">
-    <TextView
-        android:id="@+id/welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
 
-        />
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Shafayet hossen rakib"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
 
-        android:textStyle="bold"
-       />
+            <TextView
+                android:id="@+id/blance_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:drawableStart="@drawable/dollar_symbol"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                />
+
+
+
+
     <TextView
         android:id="@+id/blance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Blance"
+        android:text="Main Blance"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
+        android:layout_gravity="center"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
 
         />
-    <TextView
-        android:id="@+id/blance_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FINY 1345.467855"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
 
-        android:textStyle="bold"
-       />
+        <LinearLayout
+            android:id="@+id/top_send_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:weightSum="3"
+            android:background="#3B82C8"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/top_layot"
+            >
+
+            <LinearLayout
+                android:id="@+id/btn_dashboard_send"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center"
+                android:background="@drawable/blank_background_shape"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blank_background_shape"
+                    android:src="@drawable/send_money"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_dashboard_Recived"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_marginStart="3dp"
+                android:gravity="center"
+                android:background="@drawable/blank_background_shape"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blank_background_shape"
+                    android:src="@drawable/receive_money"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receive"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_dashboard_swap"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_marginStart="3dp"
+                android:gravity="center"
+                android:background="@drawable/blank_background_shape"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blank_background_shape"
+                    android:src="@drawable/swap_money"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swap"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
 
     </LinearLayout>
-    <LinearLayout
-        android:id="@+id/top_send_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:weightSum="3"
-         android:layout_marginTop="15dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/top_layot"
-        >
 
-        <LinearLayout
-            android:id="@+id/btn_dashboard_send"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:gravity="center"
-            android:background="@drawable/blank_background_shape"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/blank_background_shape"
-                android:src="@drawable/wallet"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Send"
-                android:textColor="@color/white"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/btn_dashboard_Recived"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:layout_marginStart="3dp"
-            android:gravity="center"
-            android:background="@drawable/blank_background_shape"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/blank_background_shape"
-                android:src="@drawable/receive_money"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Receive"
-                android:textColor="@color/white"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/btn_dashboard_swap"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:layout_marginStart="3dp"
-            android:gravity="center"
-            android:background="@drawable/blank_background_shape"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/blank_background_shape"
-                android:src="@drawable/swap"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Swap"
-                android:textColor="@color/white"/>
-        </LinearLayout>
-
-    </LinearLayout>
 
 
     <LinearLayout
         android:id="@+id/deposit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:weightSum="5"
+        android:background="@color/white"
         android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/top_send_layout"
+        app:layout_constraintTop_toBottomOf="@id/top_layot"
         android:orientation="horizontal"
        >
 
@@ -163,19 +152,19 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:padding="5dp"
-        android:background="@drawable/blank_background_shape"
+        android:background="@drawable/deposit_finy_dashbord_background"
         android:gravity="center"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_account_balance_wallet_24"/>
+            android:src="@drawable/finy_deposit"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Deposit"
-            android:textColor="@color/white"/>
+            android:textColor="@color/black"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/btn_Farming"
@@ -184,18 +173,18 @@
         android:padding="5dp"
         android:layout_marginStart="5dp"
         android:gravity="center"
-        android:background="@drawable/blank_background_shape"
+        android:background="@drawable/deposit_finy_dashbord_background"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_account_balance_wallet_24"/>
+            android:src="@drawable/finy_farming"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Farming"
-            android:textColor="@color/white"/>
+            android:textColor="@color/black"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/btn_finiy_buy"
@@ -204,18 +193,18 @@
         android:padding="5dp"
         android:layout_marginStart="5dp"
         android:gravity="center"
-        android:background="@drawable/blank_background_shape"
+        android:background="@drawable/deposit_finy_dashbord_background"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_account_balance_wallet_24"/>
+            android:src="@drawable/finy_buy"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FINIY BUY"
-            android:textColor="@color/white"/>
+            android:textColor="@color/black"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/btn_finiy_bank"
@@ -224,18 +213,18 @@
         android:padding="5dp"
         android:layout_marginStart="5dp"
         android:gravity="center"
-        android:background="@drawable/blank_background_shape"
+        android:background="@drawable/deposit_finy_dashbord_background"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_account_balance_wallet_24"/>
+            android:src="@drawable/finy_bank"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FCBANK"
-            android:textColor="@color/white"/>
+            android:textColor="@color/black"/>
     </LinearLayout>
 
         <LinearLayout
@@ -245,18 +234,18 @@
             android:padding="5dp"
             android:layout_marginStart="5dp"
             android:gravity="center"
-            android:background="@drawable/blank_background_shape"
+            android:background="@drawable/deposit_finy_dashbord_background"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/baseline_account_balance_wallet_24"/>
+                android:src="@drawable/finy_statictis"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Status"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
         </LinearLayout>
 
     </LinearLayout>
