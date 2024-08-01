@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.Deposit">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/deposit_finy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="From | FINY"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_shape_background"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+      >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_finiy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/deposit_to_finy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TO | Webx"
+        android:background="@drawable/edt_shape_background"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_webx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/Finy_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+
+        android:text="1 FINY $0.45"/>
+
+    <Button
+        android:id="@+id/btn_swap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Swap"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background_shape"
+        android:textColor="@android:color/white"
+
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_swap"
+        android:src="@drawable/cripto_send"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>

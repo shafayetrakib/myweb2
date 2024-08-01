@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    tools:context=".view.fragments.MarketCap">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <androidx.viewpager2.widget.ViewPager2
+          android:id="@+id/viewPager"
+          android:layout_width="match_parent"
+          android:layout_height="220dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginTop="5dp"
+          app:layout_constraintTop_toTopOf="parent"/>
+
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/viewPager"
+          />
+      <LinearLayout
+          android:id="@+id/text_marketCap"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="3"
+          android:layout_marginTop="12dp"
+          android:gravity="center"
+          app:layout_constraintTop_toBottomOf="@id/recyclerView">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:textColor="@color/black"
+             android:text="Market"
+             android:gravity="center"
+             android:textSize="16sp"
+             />
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:textColor="@color/black"
+             android:text="Price"
+             android:gravity="center"
+             android:textSize="16sp"
+             />
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:textColor="@color/black"
+             android:text="24hrs%"
+             android:gravity="center"
+             android:textSize="16sp"
+             />
+
+      </LinearLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recycler_marketcap"
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       app:layout_constraintTop_toBottomOf="@id/text_marketCap"
+       />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
