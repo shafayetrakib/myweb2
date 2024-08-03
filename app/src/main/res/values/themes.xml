@@ -9,6 +9,6 @@
 
     <style name="Theme.MyWeb" parent="Base.Theme.MyWeb" />
     <style name="App.CustomActivator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/blue</item>
+        <item name="android:color">@color/gray_two</item>
     </style>
 </resources>

@@ -26,7 +26,7 @@
         android:id="@+id/refer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="your Refer : "
+        android:text="Your Refer : "
         android:textSize="18dp"
         android:textColor="@color/white"
         android:layout_marginStart="10dp"

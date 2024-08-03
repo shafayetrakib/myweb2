@@ -39,13 +39,13 @@
                 android:id="@+id/dashboard_bottom_nav"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/blue"
+                android:background="@color/gray_two"
                 app:itemActiveIndicatorStyle="@style/App.CustomActivator"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:menu="@menu/dashboard_menu"
                 app:itemIconSize="26dp"
-                app:itemTextColor="@color/white"
-                app:itemIconTint="@color/white"
+                app:itemTextColor="@color/blue"
+                app:itemIconTint="@color/blue"
                 app:labelVisibilityMode="labeled"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
